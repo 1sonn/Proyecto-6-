@@ -1,0 +1,123 @@
+:root{
+    /*Primary*/
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    /*Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey:hsl(30, 18%, 87%);
+    --WengeBrown:hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+body{
+    margin: 0;
+    background: var(--Eggshell);
+    font-family: 'Outfit', 'Young Serif';
+    font-size: 16px;
+    color: var(--WengeBrown);
+}
+.main{
+    max-width: 700px;
+    margin: 7rem auto;
+    padding: 2rem;
+    border-radius: 25px;
+    background: var(--White);
+}
+.img-omelette{
+    width: 680px;
+    border-radius: 13px;
+    margin: 10px 10px 0px 10px;
+}
+.title{
+    font-family: 'Young Serif';
+    font-weight: 100;
+    font-size: 42.5px;
+    margin-left: 10px;
+    margin-bottom: 11px;
+    color: var(--DarkCharcoal);
+}
+.text{
+    font-weight: 400;
+    font-size: 16.6px;
+    color: var(--WengeBrown);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.preparation{
+    max-width: 100%;
+    background: var(--RoseWhite);
+    padding: 8px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.preparation__title{
+    color: var(--DarkRaspberry);
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+ul{
+    line-height: 80%;
+}
+ul li{
+    margin-bottom: 16px;
+    color: var(--WengeBrown);
+    padding: 3px;
+    margin-left: 8px;
+}
+li::marker{
+    color: var(--DarkRaspberry);
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+    color: var(--WengeBrown);
+    font-size: 17px;
+}
+.ingredients__title, .instructions__title, .nutrition__title{
+    font-family: 'Young Serif';
+    color: var(--Nutmeg);
+    font-size: 29px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+hr{
+    margin: 10px;
+    height: 1px;
+    background: var(--LightGrey);
+    border: none;
+}
+.ingredients > ul > li{
+    margin-left: 1px;
+    padding-left: 14px;
+}
+.ingredients{
+    margin-bottom: 30px;
+}
+ol > li{
+    margin-left: -5px;
+    padding: 8px;
+}
+table{
+    width: 97%;
+    border-collapse: collapse;
+    margin: 0px 10px 0 10px;
+}
+td{
+    padding: 15px;
+    border-bottom: 1px solid var(--LightGrey);
+    text-align: left;
+    color: var(--WengeBrown);
+}
+.highlight{
+    font-weight: bold;
+    color: var(--Nutmeg);
+}
+.nutrition-table tr:last-child td{
+    border-bottom: none;
+}
